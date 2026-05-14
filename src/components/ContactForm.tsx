@@ -1,154 +1,46 @@
 "use client"
 
 import * as React from "react"
-import { useForm } from "react-hook-form"
-import { zodResolver } from "@hookform/resolvers/zod"
-import * as z from "zod"
 import { Button } from "@/components/ui/button"
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
-import { toast } from "sonner"
-import { Send } from "lucide-react"
-
-const formSchema = z.object({
-  name: z.string().min(2, { message: "Name must be at least 2 characters." }),
-  email: z.string().email({ message: "Please enter a valid email address." }),
-  company: z.string().min(2, { message: "Company name is required." }),
-  interest: z.string().min(1, { message: "Please select an area of interest." }),
-  message: z.string().min(10, { message: "Message must be at least 10 characters." }),
-})
+import { Mail, ArrowRight, Zap } from "lucide-react"
 
 export function ContactForm() {
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      name: "",
-      email: "",
-      company: "",
-      message: "",
-    },
-  })
+  const recipient = "joel@adverlex.com"
+  const subject = encodeURIComponent("Growth Inquiry - [Your Company]")
+  const body = encodeURIComponent(
+    "Hello Adverlex Team,\n\nI am interested in learning more about your performance marketing and affiliate services.\n\nMy Details:\n- Name:\n- Company:\n- Website:\n- Project Goals:\n\nLooking forward to hearing from you!"
+  )
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values)
-    toast.success("Message Sent! We'll get back to you within 24 hours.")
-    form.reset()
-  }
+  const mailtoLink = `mailto:${recipient}?subject=${subject}&body=${body}`
 
   return (
-    <div className="glass p-8 md:p-16 rounded-3xl border-white/5 bg-brand-surface/50">
-      <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <FormField
-              control={form.control}
-              name="name"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel className="text-[10px] font-bold uppercase tracking-widest text-brand-primary">Full Name</FormLabel>
-                  <FormControl>
-                    <Input placeholder="John Doe" {...field} className="bg-brand-dark/50 border-white/10 rounded-xl focus:border-brand-primary h-14 text-sm tracking-wide" />
-                  </FormControl>
-                  <FormMessage className="text-[10px] font-bold uppercase tracking-widest text-brand-secondary" />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name="email"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel className="text-[10px] font-bold uppercase tracking-widest text-brand-primary">Email Address</FormLabel>
-                  <FormControl>
-                    <Input placeholder="john@example.com" {...field} className="bg-brand-dark/50 border-white/10 rounded-xl focus:border-brand-primary h-14 text-sm tracking-wide" />
-                  </FormControl>
-                  <FormMessage className="text-[10px] font-bold uppercase tracking-widest text-brand-secondary" />
-                </FormItem>
-              )}
-            />
-          </div>
+    <div className="glass p-10 md:p-20 rounded-3xl border-white/5 bg-brand-surface/50 flex flex-col items-center text-center">
+      <div className="w-20 h-20 rounded-2xl bg-brand-primary/10 border border-brand-primary/20 flex items-center justify-center text-brand-primary mb-8">
+        <Zap className="w-10 h-10" />
+      </div>
+      
+      <h3 className="font-heading font-black text-4xl md:text-5xl mb-6 tracking-tighter text-foreground uppercase">
+        Ready to <span className="text-brand-primary">Forge</span> Your Growth?
+      </h3>
+      
+      <p className="text-brand-muted text-lg md:text-xl leading-relaxed mb-12 max-w-lg">
+        Skip the forms. Click the button below to open a direct line to our performance engineering team via email.
+      </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <FormField
-              control={form.control}
-              name="company"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel className="text-[10px] font-bold uppercase tracking-widest text-brand-primary">Company Name</FormLabel>
-                  <FormControl>
-                    <Input placeholder="Company Inc." {...field} className="bg-brand-dark/50 border-white/10 rounded-xl focus:border-brand-primary h-14 text-sm tracking-wide" />
-                  </FormControl>
-                  <FormMessage className="text-[10px] font-bold uppercase tracking-widest text-brand-secondary" />
-                </FormItem>
-              )}
-            />
-            <FormField
-              control={form.control}
-              name="interest"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel className="text-[10px] font-bold uppercase tracking-widest text-brand-primary">Area of Interest</FormLabel>
-                  <Select onValueChange={field.onChange} defaultValue={field.value}>
-                    <FormControl>
-                      <SelectTrigger className="bg-brand-dark/50 border-white/10 rounded-xl focus:border-brand-primary h-14 text-left text-sm tracking-wide">
-                        <SelectValue placeholder="Select Service" />
-                      </SelectTrigger>
-                    </FormControl>
-                    <SelectContent className="bg-brand-surface border-white/10 text-white rounded-xl">
-                      <SelectItem value="digital" className="text-[10px] font-bold tracking-widest py-3">Digital Marketing</SelectItem>
-                      <SelectItem value="affiliate" className="text-[10px] font-bold tracking-widest py-3">Affiliate Marketing</SelectItem>
-                      <SelectItem value="both" className="text-[10px] font-bold tracking-widest py-3">Both Services</SelectItem>
-                    </SelectContent>
-                  </Select>
-                  <FormMessage className="text-[10px] font-bold uppercase tracking-widest text-brand-secondary" />
-                </FormItem>
-              )}
-            />
-          </div>
+      <Button 
+        asChild
+        className="w-full h-20 rounded-2xl bg-brand-primary hover:bg-brand-primary/90 text-white font-bold text-xl md:text-2xl uppercase tracking-widest transition-all hover:scale-[1.05] active:scale-95 shadow-2xl shadow-brand-primary/40 group"
+      >
+        <a href={mailtoLink}>
+          <Mail className="w-8 h-8 mr-4 group-hover:rotate-12 transition-transform" />
+          Send Growth Inquiry
+          <ArrowRight className="w-8 h-8 ml-4 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
+        </a>
+      </Button>
 
-          <FormField
-            control={form.control}
-            name="message"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel className="text-[10px] font-bold uppercase tracking-widest text-brand-primary">Message</FormLabel>
-                <FormControl>
-                  <Textarea 
-                    placeholder="Tell us about your project..." 
-                    {...field} 
-                    className="bg-brand-dark/50 border-white/10 rounded-xl focus:border-brand-primary min-h-[150px] text-sm tracking-wide"
-                  />
-                </FormControl>
-                <FormMessage className="text-[10px] font-bold uppercase tracking-widest text-brand-secondary" />
-              </FormItem>
-            )}
-          />
-
-          <Button 
-            type="submit" 
-            className="w-full h-16 rounded-xl bg-brand-primary hover:bg-brand-primary/90 text-white font-bold text-xl uppercase tracking-widest transition-all hover:scale-[1.02] active:scale-95 shadow-xl shadow-brand-primary/20"
-          >
-            <Send className="w-6 h-6 mr-3" />
-            Send Message
-          </Button>
-        </form>
-      </Form>
+      <p className="mt-8 text-[10px] text-stone-500 uppercase tracking-widest font-bold">
+        Average response time: <span className="text-brand-primary">&lt; 12 hours</span>
+      </p>
     </div>
   )
 }
-

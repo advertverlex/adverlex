@@ -17,7 +17,7 @@ export function ContactView() {
         tag="Contact"
         title={<>Get In <span className="text-foreground/40 italic font-light">Touch</span>.</>}
 
-        subtitle="Ready to forge your path to unstoppable growth? Fill out the form below and one of our team members will be in touch shortly."
+        subtitle="Ready to forge your path to unstoppable growth? Click the button below to start a direct conversation with our team."
         illustration="/illustrations/contact.svg"
       />
 
