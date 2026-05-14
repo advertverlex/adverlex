@@ -58,7 +58,7 @@ export function PageHero({
             initial={{ opacity: 0, scale: 0.9, rotate: reverse ? 5 : -5 }}
             animate={{ opacity: 1, scale: 1, rotate: 0 }}
             transition={{ duration: 1.2, ease: "easeOut" as any, delay: 0.2 }}
-            className="relative grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-1000"
+            className="relative transition-all duration-1000"
           >
             <IllustrationBlock
               src={illustration}

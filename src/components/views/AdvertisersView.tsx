@@ -74,7 +74,7 @@ export function AdvertisersView() {
             </div>
             <div className="flex-1 w-full glass rounded-3xl p-12 md:p-16 aspect-square flex flex-col items-center justify-center relative overflow-hidden group">
                <div className="absolute inset-0 bg-dot-grid opacity-[0.1]" />
-               <div className="relative z-10 w-full mb-8 grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700">
+               <div className="relative z-10 w-full mb-8 transition-all duration-700">
                   <IllustrationBlock 
                     src="/illustrations/roi-growth.svg"
                     alt="ROI Growth"

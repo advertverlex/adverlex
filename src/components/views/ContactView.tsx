@@ -42,7 +42,7 @@ export function ContactView() {
                     </div>
                     <div>
                       <p className="text-[10px] text-stone-500 uppercase tracking-widest font-bold mb-2">Email Us</p>
-                      <p className="text-xl font-black text-foreground tracking-tighter">hello@adverlex.com</p>
+                      <p className="text-xl font-black text-foreground tracking-tighter">joel@adverlex.com</p>
 
                     </div>
                   </div>
@@ -83,7 +83,7 @@ export function ContactView() {
                 <div className="absolute top-0 right-0 -mt-6 -mr-6 w-32 h-32 bg-brand-primary/10 rounded-full blur-3xl group-hover:bg-brand-primary/20 transition-all" />
                 <h4 className="font-heading font-black text-xl mb-3 relative z-10 text-foreground tracking-tighter uppercase">Prefer a call?</h4>
 
-                <p className="text-stone-400 mb-6 relative z-10 text-sm leading-relaxed">Our strategists are available for discovery calls Mondayâ€”Friday.</p>
+                <p className="text-stone-400 mb-6 relative z-10 text-sm leading-relaxed">Our strategists are available for discovery calls MondayÃ¢â‚¬â€Friday.</p>
                 <Link href="#" className="text-brand-primary font-bold inline-flex items-center gap-3 group/link relative z-10 uppercase text-xs tracking-widest">
                   Book Discovery Session <div className="w-8 h-[2px] bg-brand-primary transition-all group-hover/link:w-14" />
                 </Link>

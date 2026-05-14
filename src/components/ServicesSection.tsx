@@ -123,7 +123,7 @@ export function ServicesSection() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
-                className="flex-1 w-full max-w-md lg:max-w-none grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-1000"
+                className="flex-1 w-full max-w-md lg:max-w-none transition-all duration-1000"
               >
                 <div className="relative">
                   <div className="absolute inset-0 bg-brand-primary/10 blur-[100px] rounded-none opacity-50" />

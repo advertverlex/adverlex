@@ -1,21 +1,21 @@
-# ðŸš€ AI Agent Build Prompt â€” Adverlex Marketing Website
+# Ã°Å¸Å¡â‚¬ AI Agent Build Prompt Ã¢â‚¬â€ Adverlex Marketing Website
 
 ## Project Overview
 
-Build a **modern, professional marketing website** for **Adverlex** â€” a company that offers two core online services:
+Build a **modern, professional marketing website** for **Adverlex** Ã¢â‚¬â€ a company that offers two core online services:
 
-1. **Digital Marketing** â€” SEO, social media management, paid ads, content strategy, and brand growth
-2. **Affiliate Marketing** â€” Program management, partner recruitment, performance tracking, and commission automation
+1. **Digital Marketing** Ã¢â‚¬â€ SEO, social media management, paid ads, content strategy, and brand growth
+2. **Affiliate Marketing** Ã¢â‚¬â€ Program management, partner recruitment, performance tracking, and commission automation
 
 ### Brand Identity
 - **Company Name**: Adverlex
 - **Tagline**: *"Forge Your Path to Unstoppable Growth"*
 - **Brand Voice**: Bold, confident, data-driven, results-obsessed
-- **Logo concept**: Wordmark `Adverlex` â€” bold sans-serif, with a small flame or upward arrow icon mark in the brand color
+- **Logo concept**: Wordmark `Adverlex` Ã¢â‚¬â€ bold sans-serif, with a small flame or upward arrow icon mark in the brand color
 
 ### Target Audiences
-- **Advertisers / Businesses** â€” brands looking to grow sales via affiliate & digital channels
-- **Affiliates / Publishers** â€” content creators, bloggers, and influencers who want to monetize their audience
+- **Advertisers / Businesses** Ã¢â‚¬â€ brands looking to grow sales via affiliate & digital channels
+- **Affiliates / Publishers** Ã¢â‚¬â€ content creators, bloggers, and influencers who want to monetize their audience
 
 ---
 
@@ -26,9 +26,9 @@ Build a **modern, professional marketing website** for **Adverlex** â€” a c
 | Framework | **Next.js 14+ (App Router)** |
 | UI Components | **shadcn/ui** (`npx shadcn@latest init`) |
 | Styling | **Tailwind CSS** (bundled with shadcn) |
-| Illustrations | **unDraw** (https://undraw.co â€” download SVGs, set primary color to `#f97316`) |
+| Illustrations | **unDraw** (https://undraw.co Ã¢â‚¬â€ download SVGs, set primary color to `#f97316`) |
 | Icons | **Lucide React** (already included with shadcn) |
-| Fonts | Google Fonts â€” **`Sora`** (headings) + **`DM Sans`** (body) |
+| Fonts | Google Fonts Ã¢â‚¬â€ **`Sora`** (headings) + **`DM Sans`** (body) |
 | Animations | **Framer Motion** (`npm install framer-motion`) |
 | Forms | **React Hook Form + Zod** via shadcn `Form` component |
 | Theme | `next-themes` for dark/light toggle |
@@ -43,8 +43,8 @@ Define these in `globals.css` under `:root` and `.dark`:
 
 ```css
 :root {
-  --brand-primary: #f97316;       /* Orange â€” fire/forge energy, primary CTAs */
-  --brand-secondary: #facc15;     /* Amber/Yellow â€” accent highlights */
+  --brand-primary: #f97316;       /* Orange Ã¢â‚¬â€ fire/forge energy, primary CTAs */
+  --brand-secondary: #facc15;     /* Amber/Yellow Ã¢â‚¬â€ accent highlights */
   --brand-dark: #0c0a09;          /* Near-black background (dark mode) */
   --brand-surface: #1c1917;       /* Card backgrounds (dark mode) */
   --brand-muted: #a8a29e;         /* Muted/secondary text */
@@ -53,12 +53,12 @@ Define these in `globals.css` under `:root` and `.dark`:
 }
 ```
 
-### Aesthetic Direction â€” "Industrial Fire"
+### Aesthetic Direction Ã¢â‚¬â€ "Industrial Fire"
 - **Dark-first design** with light mode toggle via `next-themes`
-- Hero section: Animated gradient background â€” deep charcoal/near-black with subtle orange ember glow blobs (CSS keyframe animation)
+- Hero section: Animated gradient background Ã¢â‚¬â€ deep charcoal/near-black with subtle orange ember glow blobs (CSS keyframe animation)
 - **Glassmorphism cards**: `bg-white/5 backdrop-blur-md border border-orange-500/20 rounded-2xl`
 - **Glowing CTAs**: Primary button with `box-shadow: 0 0 24px rgba(249,115,22,0.5)`
-- Bold oversized typography â€” large `text-6xl`+ hero headlines
+- Bold oversized typography Ã¢â‚¬â€ large `text-6xl`+ hero headlines
 - unDraw illustrations with primary color set to `#f97316` (Adverlex orange)
 - Subtle grain/noise texture overlay on hero for depth (`bg-noise`)
 - Section dividers using soft diagonal gradients, not flat lines
@@ -72,7 +72,7 @@ const sora = Sora({ subsets: ['latin'], variable: '--font-sora' })
 const dmSans = DM_Sans({ subsets: ['latin'], variable: '--font-dm-sans' })
 ```
 
-Apply `font-sora` to all headings (`h1`â€“`h3`) and `font-dm-sans` to body text via Tailwind config.
+Apply `font-sora` to all headings (`h1`Ã¢â‚¬â€œ`h3`) and `font-dm-sans` to body text via Tailwind config.
 
 ---
 
@@ -80,8 +80,8 @@ Apply `font-sora` to all headings (`h1`â€“`h3`) and `font-dm-sans` to body 
 
 ```
 /app
-  layout.tsx                  â† Root layout: fonts, ThemeProvider, Navbar, Footer
-  page.tsx                    â† Homepage
+  layout.tsx                  Ã¢â€ Â Root layout: fonts, ThemeProvider, Navbar, Footer
+  page.tsx                    Ã¢â€ Â Homepage
   /digital-marketing
     page.tsx
   /affiliate-marketing
@@ -96,7 +96,7 @@ Apply `font-sora` to all headings (`h1`â€“`h3`) and `font-dm-sans` to body 
     page.tsx
 
 /components
-  /ui                         â† shadcn auto-generated components
+  /ui                         Ã¢â€ Â shadcn auto-generated components
   Navbar.tsx
   Footer.tsx
   HeroSection.tsx
@@ -107,10 +107,10 @@ Apply `font-sora` to all headings (`h1`â€“`h3`) and `font-dm-sans` to body 
   TestimonialsCarousel.tsx
   CTABanner.tsx
   FeatureCard.tsx
-  IllustrationBlock.tsx       â† Reusable wrapper for unDraw SVGs
+  IllustrationBlock.tsx       Ã¢â€ Â Reusable wrapper for unDraw SVGs
 
 /public
-  /illustrations              â† All unDraw SVGs go here
+  /illustrations              Ã¢â€ Â All unDraw SVGs go here
     online-marketing.svg
     growth-analytics.svg
     affiliate-network.svg
@@ -121,12 +121,12 @@ Apply `font-sora` to all headings (`h1`â€“`h3`) and `font-dm-sans` to body 
   logo.svg
 
 /lib
-  utils.ts                    â† shadcn cn() utility
+  utils.ts                    Ã¢â€ Â shadcn cn() utility
 ```
 
 ---
 
-## Pages â€” Full Detailed Specs
+## Pages Ã¢â‚¬â€ Full Detailed Specs
 
 ---
 
@@ -141,7 +141,7 @@ Apply `font-sora` to all headings (`h1`â€“`h3`) and `font-dm-sans` to body 
 
 ### 2. Navbar (`components/Navbar.tsx`)
 
-- **Logo**: Left side â€” flame icon (Lucide `Flame`) + `Adverlex` wordmark in bold Sora font, orange colored
+- **Logo**: Left side Ã¢â‚¬â€ flame icon (Lucide `Flame`) + `Adverlex` wordmark in bold Sora font, orange colored
 - **Nav links** (desktop): 
   - `Services` with dropdown (Digital Marketing, Affiliate Marketing)
   - `Advertisers`
@@ -158,13 +158,13 @@ Apply `font-sora` to all headings (`h1`â€“`h3`) and `font-dm-sans` to body 
 
 Compose these sections in order:
 
-#### 3.1 â€” Hero Section
+#### 3.1 Ã¢â‚¬â€ Hero Section
 
 ```
 Layout: Two-column on desktop (text left, illustration right). Single column on mobile.
 ```
 
-- **Badge** (above headline): shadcn `Badge` â€” `ðŸ”¥ Affiliate & Digital Marketing Agency`
+- **Badge** (above headline): shadcn `Badge` Ã¢â‚¬â€ `Ã°Å¸â€Â¥ Affiliate & Digital Marketing Agency`
 - **Headline**: 
   ```
   Forge Unstoppable
@@ -174,50 +174,50 @@ Layout: Two-column on desktop (text left, illustration right). Single column on 
   "Traffic &" in white, "Revenue." in orange gradient text (`bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent`)
 
 - **Subheading**: 
-  `Adverlex builds data-driven digital marketing and affiliate programs that turn clicks into customers â€” and customers into long-term revenue.`
+  `Adverlex builds data-driven digital marketing and affiliate programs that turn clicks into customers Ã¢â‚¬â€ and customers into long-term revenue.`
 
 - **CTA Buttons** (side by side):
-  - `I'm an Advertiser` â†’ `/advertisers` (primary orange button with glow)
-  - `I'm an Affiliate` â†’ `/affiliates` (ghost/outline button)
+  - `I'm an Advertiser` Ã¢â€ â€™ `/advertisers` (primary orange button with glow)
+  - `I'm an Affiliate` Ã¢â€ â€™ `/affiliates` (ghost/outline button)
 
 - **Illustration**: unDraw `online-marketing.svg` on the right, with a subtle floating animation (Framer Motion `y: [0, -12, 0]` loop)
 
-- **Background**: Radial gradient â€” `radial-gradient(ellipse at 30% 50%, rgba(249,115,22,0.15), transparent 60%)` animated slowly
+- **Background**: Radial gradient Ã¢â‚¬â€ `radial-gradient(ellipse at 30% 50%, rgba(249,115,22,0.15), transparent 60%)` animated slowly
 
-#### 3.2 â€” Trust Bar
+#### 3.2 Ã¢â‚¬â€ Trust Bar
 
 - Text: `Trusted by 5,000+ businesses worldwide`
 - Show 5 dummy brand name placeholders styled as muted logo text (stone-400 color)
 - Subtle separator line above and below
 - Full-width, centered
 
-#### 3.3 â€” Audience Split Section (`AudienceSplit.tsx`)
+#### 3.3 Ã¢â‚¬â€ Audience Split Section (`AudienceSplit.tsx`)
 
 Two glassmorphism cards side-by-side (grid-cols-2 on desktop, stacked on mobile):
 
-**Card 1 â€” For Advertisers**
+**Card 1 Ã¢â‚¬â€ For Advertisers**
 - Icon: Lucide `TrendingUp` in orange circle
 - Headline: `For Advertisers`
 - Body: `Reach new audiences, scale your sales, and track every dollar with our performance-driven digital and affiliate marketing solutions.`
-- CTA link: `Explore Advertiser Solutions â†’`
+- CTA link: `Explore Advertiser Solutions Ã¢â€ â€™`
 - unDraw illustration: `revenue.svg` or `investing.svg`
 
-**Card 2 â€” For Affiliates**
+**Card 2 Ã¢â‚¬â€ For Affiliates**
 - Icon: Lucide `Users` in amber circle
 - Headline: `For Affiliates`
 - Body: `Monetize your content and audience. Join our affiliate network and connect with top brands offering industry-leading commissions.`
-- CTA link: `Explore Affiliate Opportunities â†’`
+- CTA link: `Explore Affiliate Opportunities Ã¢â€ â€™`
 - unDraw illustration: `affiliate-network.svg`
 
 Card styles: `bg-white/5 backdrop-blur-sm border border-orange-500/20 rounded-3xl p-8 hover:border-orange-500/50 transition-all duration-300`
 
-#### 3.4 â€” Services Section (`ServicesSection.tsx`)
+#### 3.4 Ã¢â‚¬â€ Services Section (`ServicesSection.tsx`)
 
 Section header:
 - Tag: `What We Do`
 - Title: `Two Powerful Services. One Growth Engine.`
 
-**Service 1 â€” Digital Marketing**
+**Service 1 Ã¢â‚¬â€ Digital Marketing**
 - Icon: `BarChart3` (Lucide)
 - Features list (with checkmarks):
   - Search Engine Optimization (SEO)
@@ -226,10 +226,10 @@ Section header:
   - Content Marketing & Strategy
   - Email Marketing Campaigns
   - Brand Identity & Positioning
-- CTA: `Learn More â†’` â†’ `/digital-marketing`
+- CTA: `Learn More Ã¢â€ â€™` Ã¢â€ â€™ `/digital-marketing`
 - unDraw illustration: `growth-analytics.svg`
 
-**Service 2 â€” Affiliate Marketing**
+**Service 2 Ã¢â‚¬â€ Affiliate Marketing**
 - Icon: `Network` (Lucide)
 - Features list:
   - Affiliate Program Setup & Management
@@ -238,12 +238,12 @@ Section header:
   - Commission Automation
   - Fraud Detection & Compliance
   - Custom Affiliate Dashboard
-- CTA: `Learn More â†’` â†’ `/affiliate-marketing`
+- CTA: `Learn More Ã¢â€ â€™` Ã¢â€ â€™ `/affiliate-marketing`
 - unDraw illustration: `data-driven.svg`
 
 Layout: Alternating image-text rows (text left / image right, then image left / text right)
 
-#### 3.5 â€” Stats Counter Section (`StatsCounter.tsx`)
+#### 3.5 Ã¢â‚¬â€ Stats Counter Section (`StatsCounter.tsx`)
 
 Full-width dark section with orange gradient border top. Four stats in a grid:
 
@@ -256,7 +256,7 @@ Full-width dark section with orange gradient border top. Four stats in a grid:
 
 Add a count-up animation when the section enters the viewport (use Framer Motion `useInView` + a simple counter animation).
 
-#### 3.6 â€” How It Works (`HowItWorks.tsx`)
+#### 3.6 Ã¢â‚¬â€ How It Works (`HowItWorks.tsx`)
 
 Section header:
 - Tag: `The Process`
@@ -264,14 +264,14 @@ Section header:
 
 Four steps in a horizontal timeline on desktop (vertical on mobile). Each step has a number badge (orange), title, and short description:
 
-1. **Discovery Call** â€” `We learn your business, goals, and current marketing gaps.`
-2. **Strategy Build** â€” `Our team crafts a custom digital + affiliate marketing roadmap.`
-3. **Launch & Recruit** â€” `We launch your campaigns and recruit high-performing affiliate partners.`
-4. **Optimize & Scale** â€” `Continuous data analysis and iteration to maximize your ROI.`
+1. **Discovery Call** Ã¢â‚¬â€ `We learn your business, goals, and current marketing gaps.`
+2. **Strategy Build** Ã¢â‚¬â€ `Our team crafts a custom digital + affiliate marketing roadmap.`
+3. **Launch & Recruit** Ã¢â‚¬â€ `We launch your campaigns and recruit high-performing affiliate partners.`
+4. **Optimize & Scale** Ã¢â‚¬â€ `Continuous data analysis and iteration to maximize your ROI.`
 
 Use Framer Motion `staggerChildren` to animate steps in on scroll.
 
-#### 3.7 â€” Testimonials (`TestimonialsCarousel.tsx`)
+#### 3.7 Ã¢â‚¬â€ Testimonials (`TestimonialsCarousel.tsx`)
 
 Section header:
 - Title: `Real Results. Real Stories.`
@@ -296,13 +296,13 @@ Auto-scrolling carousel (Framer Motion or CSS scroll). Three testimonial cards v
 - Role: `Marketing Director, SaaS Company`
 - Avatar: placeholder initials avatar
 
-#### 3.8 â€” CTA Banner (`CTABanner.tsx`)
+#### 3.8 Ã¢â‚¬â€ CTA Banner (`CTABanner.tsx`)
 
 Full-width banner near the footer:
 - Background: Orange to amber gradient with a subtle noise texture overlay
 - Headline: `Ready to Forge Your Growth?`
-- Subtext: `Let's build your custom digital marketing or affiliate program. No fluff â€” just results.`
-- Button: `Get In Touch` â†’ `/contact` (dark button on orange background)
+- Subtext: `Let's build your custom digital marketing or affiliate program. No fluff Ã¢â‚¬â€ just results.`
+- Button: `Get In Touch` Ã¢â€ â€™ `/contact` (dark button on orange background)
 - Right side: unDraw `contact.svg` illustration (semi-transparent, decorative)
 
 ---
@@ -319,7 +319,7 @@ Full-width banner near the footer:
 
 ### 5. Affiliate Marketing Page (`/affiliate-marketing`)
 
-- **Hero**: Headline `Affiliate Marketing on Autopilot â€” Built to Scale` + unDraw `affiliate-network.svg`
+- **Hero**: Headline `Affiliate Marketing on Autopilot Ã¢â‚¬â€ Built to Scale` + unDraw `affiliate-network.svg`
 - **Two-audience tabs** (shadcn `Tabs`): Switch between "For Advertisers" and "For Affiliates" content
 - **Program features**: 6 cards (Program Setup, Partner Recruitment, Tracking, Commissions, Reporting, Fraud Detection)
 - **Stats row**: Key affiliate network stats
@@ -332,7 +332,7 @@ Full-width banner near the footer:
 - **Hero**: Headline `Dominate Your Market with Performance Marketing` + CTA `Start Your Program`
 - **Value props**: 4 reasons to choose Adverlex
 - **How it works**: Advertiser-specific 4-step process
-- **Pricing tiers section** (optional placeholder): 3 shadcn `Card`s â€” Starter / Growth / Enterprise. Mark as "Custom Pricing â€” Contact Us"
+- **Pricing tiers section** (optional placeholder): 3 shadcn `Card`s Ã¢â‚¬â€ Starter / Growth / Enterprise. Mark as "Custom Pricing Ã¢â‚¬â€ Contact Us"
 - **Testimonials**: Advertiser-focused
 - **CTA Banner**
 
@@ -342,7 +342,7 @@ Full-width banner near the footer:
 
 - **Hero**: Headline `Monetize Your Audience. Earn Top Commissions.` + CTA `Join the Network`
 - **Benefits grid**: 4 cards (Top Brands, Generous Commissions, Real-time Tracking, Timely Payouts)
-- **How it works**: Affiliate-specific 3-step process (Sign Up â†’ Get Approved â†’ Start Earning)
+- **How it works**: Affiliate-specific 3-step process (Sign Up Ã¢â€ â€™ Get Approved Ã¢â€ â€™ Start Earning)
 - **unDraw illustration**: `team.svg` or `content-creator.svg`
 - **FAQ section**: shadcn `Accordion` with 5 common affiliate questions
 - **CTA Banner**
@@ -353,7 +353,7 @@ Full-width banner near the footer:
 
 - **Hero**: `We Are Adverlex` headline + mission statement paragraph
 - **Mission & Vision**: Two-column layout
-- **Team Section**: Placeholder team cards (3â€“4) with avatar, name, role
+- **Team Section**: Placeholder team cards (3Ã¢â‚¬â€œ4) with avatar, name, role
 - **Core Values**: 4 values with icons (Transparency, Performance, Partnership, Innovation)
 - **CTA Banner**
 
@@ -369,7 +369,7 @@ Full-width banner near the footer:
     - On success: show shadcn `toast` notification
   - Right: Contact info card + unDraw `contact.svg` illustration
 - Contact details:
-  - Email: `hello@adverlex.com`
+  - Email: `joel@adverlex.com`
   - Placeholder address
   - Social links: LinkedIn, Twitter/X, Instagram (Lucide icons)
 
@@ -383,7 +383,7 @@ Full-width banner near the footer:
   - Services: Digital Marketing, Affiliate Marketing
   - For You: Advertisers, Affiliates
   - Legal: Privacy Policy, Terms of Service
-- **Bottom bar**: `Â© 2026 Adverlex LLC. All rights reserved.` + social icons
+- **Bottom bar**: `Ã‚Â© 2026 Adverlex LLC. All rights reserved.` + social icons
 - Background: `bg-black` with a subtle top border in orange
 - Newsletter signup input (email + subscribe button) in a row above the links
 
@@ -464,17 +464,17 @@ npx shadcn@latest add avatar
 ## Responsive Breakpoints
 
 - Mobile first approach via Tailwind
-- `sm`: 640px â€” adjust typography scale
-- `md`: 768px â€” switch from single column to two columns
-- `lg`: 1024px â€” full desktop layout, navbar links visible
-- `xl`: 1280px â€” max content width `max-w-7xl mx-auto px-6`
+- `sm`: 640px Ã¢â‚¬â€ adjust typography scale
+- `md`: 768px Ã¢â‚¬â€ switch from single column to two columns
+- `lg`: 1024px Ã¢â‚¬â€ full desktop layout, navbar links visible
+- `xl`: 1280px Ã¢â‚¬â€ max content width `max-w-7xl mx-auto px-6`
 
 ---
 
 ## Animation Guidelines (Framer Motion)
 
 ```tsx
-// Standard fade-up variant â€” use across all sections
+// Standard fade-up variant Ã¢â‚¬â€ use across all sections
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } }
@@ -502,7 +502,7 @@ Add metadata to each page using Next.js `generateMetadata`:
 ```tsx
 // app/page.tsx
 export const metadata = {
-  title: 'Adverlex â€” Digital & Affiliate Marketing Agency',
+  title: 'Adverlex Ã¢â‚¬â€ Digital & Affiliate Marketing Agency',
   description: 'Adverlex builds data-driven digital marketing and affiliate programs that turn clicks into revenue. Serving advertisers and affiliates worldwide.',
   openGraph: {
     title: 'Adverlex',
@@ -520,96 +520,96 @@ Customize metadata per page accordingly.
 
 ## Notes for the AI Agent
 
-1. **Always use shadcn components** as the base â€” do not build custom input/button/card components from scratch
-2. **Dark mode is the default** â€” ensure all text has sufficient contrast in dark mode
+1. **Always use shadcn components** as the base Ã¢â‚¬â€ do not build custom input/button/card components from scratch
+2. **Dark mode is the default** Ã¢â‚¬â€ ensure all text has sufficient contrast in dark mode
 3. **All images** use `next/image` with explicit `width` and `height`
 4. **All internal links** use `next/link`
-5. **No placeholder lorem ipsum** â€” use the real copy provided in this document
-6. **unDraw SVGs** should be embedded as `<img>` tags via `next/image` or inline SVG â€” not as `<Image>` if they're dynamic
-7. **The brand color is orange `#f97316`** â€” use it consistently for CTAs, icons, badges, accents, and hover states
+5. **No placeholder lorem ipsum** Ã¢â‚¬â€ use the real copy provided in this document
+6. **unDraw SVGs** should be embedded as `<img>` tags via `next/image` or inline SVG Ã¢â‚¬â€ not as `<Image>` if they're dynamic
+7. **The brand color is orange `#f97316`** Ã¢â‚¬â€ use it consistently for CTAs, icons, badges, accents, and hover states
 8. **Mobile hamburger menu** must be fully functional using shadcn `Sheet`
-9. Build all pages â€” do not skip any page listed above
-10. The contact form should have **client-side validation** via Zod â€” no backend required (just show success toast on submit)
+9. Build all pages Ã¢â‚¬â€ do not skip any page listed above
+10. The contact form should have **client-side validation** via Zod Ã¢â‚¬â€ no backend required (just show success toast on submit)
 
 ---
 
-## âš ï¸ Anti-AI Rules â€” This Site Must Not Look AI-Generated
+## Ã¢Å¡Â Ã¯Â¸Â Anti-AI Rules Ã¢â‚¬â€ This Site Must Not Look AI-Generated
 
 These rules override any default coding habits. A real designer built this. Every decision must reflect intentional craft, not template output.
 
 ---
 
-### Layout & Spacing â€” No Cookie-Cutter Grids
+### Layout & Spacing Ã¢â‚¬â€ No Cookie-Cutter Grids
 
 - **Never use a flat, uniform card grid** for everything. Mix layouts: some sections use asymmetric two-column splits, some use a large feature left + small stack right, some use a horizontal scroll row. Vary it.
-- **Section padding must vary** â€” not every section gets `py-24`. Some are tighter (`py-12`), some are more generous (`py-36`). Rhythm should feel designed, not repeated.
-- **Never center-align every section**. Hero is centered. Other sections alternate â€” left-aligned text blocks, right-aligned stats, full-bleed banners. Monotony kills credibility.
-- **At least two sections per page must break the max-width container** â€” e.g. a full-bleed background color/gradient that goes edge to edge, with only the inner text constrained.
+- **Section padding must vary** Ã¢â‚¬â€ not every section gets `py-24`. Some are tighter (`py-12`), some are more generous (`py-36`). Rhythm should feel designed, not repeated.
+- **Never center-align every section**. Hero is centered. Other sections alternate Ã¢â‚¬â€ left-aligned text blocks, right-aligned stats, full-bleed banners. Monotony kills credibility.
+- **At least two sections per page must break the max-width container** Ã¢â‚¬â€ e.g. a full-bleed background color/gradient that goes edge to edge, with only the inner text constrained.
 - **Avoid equal-height, equal-width card rows**. Let content breathe naturally. A testimonial card can be taller. A stat block shorter. Don't force uniform heights.
 
 ---
 
-### Typography â€” Not Every Headline is the Same Size
+### Typography Ã¢â‚¬â€ Not Every Headline is the Same Size
 
 - **Headlines must have real hierarchy**. The H1 on the homepage should be noticeably larger than H2s on inner pages. Don't use `text-4xl` everywhere and call it done.
-- **Never set body text at full black or full white** â€” use `text-stone-300` on dark, `text-stone-600` on light. Pure `#ffffff` body copy feels like an AI default.
-- **Use variable font sizes within a single headline** when appropriate â€” e.g. a smaller word on line 1 and a large word on line 2, or a word in a different weight mid-sentence for emphasis.
-- **Mix font weights intentionally** â€” not everything is `font-bold`. Some labels are `font-medium`, some stat numbers are `font-black`, some body is `font-normal`. Make it feel deliberate.
-- **Line height on large headlines** must be tight â€” `leading-none` or `leading-tight`. AI-generated code often leaves default leading on massive type which looks broken.
-- **Letter-spacing on section label tags** (like `WHAT WE DO`) should use `tracking-widest text-xs uppercase` â€” this small detail signals design craft.
+- **Never set body text at full black or full white** Ã¢â‚¬â€ use `text-stone-300` on dark, `text-stone-600` on light. Pure `#ffffff` body copy feels like an AI default.
+- **Use variable font sizes within a single headline** when appropriate Ã¢â‚¬â€ e.g. a smaller word on line 1 and a large word on line 2, or a word in a different weight mid-sentence for emphasis.
+- **Mix font weights intentionally** Ã¢â‚¬â€ not everything is `font-bold`. Some labels are `font-medium`, some stat numbers are `font-black`, some body is `font-normal`. Make it feel deliberate.
+- **Line height on large headlines** must be tight Ã¢â‚¬â€ `leading-none` or `leading-tight`. AI-generated code often leaves default leading on massive type which looks broken.
+- **Letter-spacing on section label tags** (like `WHAT WE DO`) should use `tracking-widest text-xs uppercase` Ã¢â‚¬â€ this small detail signals design craft.
 
 ---
 
-### Color & Contrast â€” Not Just Orange Everywhere
+### Color & Contrast Ã¢â‚¬â€ Not Just Orange Everywhere
 
-- **Don't apply the brand color to every element** â€” it loses meaning. Use orange for: primary buttons, key icons, active states, one accent word per headline, stat numbers. Everywhere else: neutral.
-- **Use opacity variants of orange** for subtle depth â€” `text-orange-500/60`, `border-orange-500/20`, `bg-orange-500/10` for glows and ghost elements.
-- **At least one section per page should have an inverted or distinct background** â€” not just the same dark surface repeated. Options: a slightly lighter stone-900, a warm near-black, an orange gradient band, a grid/dot pattern background.
-- **Gradient text must be used sparingly** â€” max one or two instances per page on a key headline word. Overuse makes it look like a template.
-- **Never use a rainbow or multi-color icon set**. All icons stay monochrome â€” either white, stone-400, or orange. Consistent icon treatment = professional.
-
----
-
-### Components â€” Real Design Details
-
-- **Buttons must have intentional states**: default, hover (slight scale + shadow change), focus (ring), active (scale down). Don't leave the shadcn default untouched â€” override the border-radius to `rounded-xl` and add the orange glow shadow on the primary button.
-- **Cards must NOT all look the same**. Feature cards, testimonial cards, stat cards, and pricing cards should each have distinct visual treatments â€” different border styles, padding, background tints, or corner radii.
-- **The Navbar logo area must have a real mark** â€” even if it's just a `<svg>` flame drawn inline or a styled `TF` monogram with a background pill. A plain text wordmark alone is lazy.
-- **The Footer must not be an afterthought** â€” it should have the logo repeated, a short brand tagline, a newsletter input row, the link columns, a divider, and the copyright bar. Full treatment.
-- **Section "label tags"** (the small uppercase text above section titles like `THE PROCESS`) should be styled as a badge â€” small pill with orange/10 background, orange text, slight border. Not just plain uppercase text.
-- **At least one section must use a background pattern** â€” CSS dot grid, line grid, or diagonal stripes at very low opacity (3â€“5%) over the dark background. Adds texture without noise.
+- **Don't apply the brand color to every element** Ã¢â‚¬â€ it loses meaning. Use orange for: primary buttons, key icons, active states, one accent word per headline, stat numbers. Everywhere else: neutral.
+- **Use opacity variants of orange** for subtle depth Ã¢â‚¬â€ `text-orange-500/60`, `border-orange-500/20`, `bg-orange-500/10` for glows and ghost elements.
+- **At least one section per page should have an inverted or distinct background** Ã¢â‚¬â€ not just the same dark surface repeated. Options: a slightly lighter stone-900, a warm near-black, an orange gradient band, a grid/dot pattern background.
+- **Gradient text must be used sparingly** Ã¢â‚¬â€ max one or two instances per page on a key headline word. Overuse makes it look like a template.
+- **Never use a rainbow or multi-color icon set**. All icons stay monochrome Ã¢â‚¬â€ either white, stone-400, or orange. Consistent icon treatment = professional.
 
 ---
 
-### Motion & Interaction â€” Purposeful, Not Gratuitous
+### Components Ã¢â‚¬â€ Real Design Details
 
-- **Never animate everything** â€” only animate things that benefit from it: hero illustration (float), section entries (fade up once), stat counters (count up on view), CTA hover states.
-- **Animation durations must feel natural**: fade-ups `0.5sâ€“0.7s`, counters `1.8sâ€“2.2s`, floats `3.5sâ€“5s`. Anything faster than `0.3s` for a section entry looks twitchy.
+- **Buttons must have intentional states**: default, hover (slight scale + shadow change), focus (ring), active (scale down). Don't leave the shadcn default untouched Ã¢â‚¬â€ override the border-radius to `rounded-xl` and add the orange glow shadow on the primary button.
+- **Cards must NOT all look the same**. Feature cards, testimonial cards, stat cards, and pricing cards should each have distinct visual treatments Ã¢â‚¬â€ different border styles, padding, background tints, or corner radii.
+- **The Navbar logo area must have a real mark** Ã¢â‚¬â€ even if it's just a `<svg>` flame drawn inline or a styled `TF` monogram with a background pill. A plain text wordmark alone is lazy.
+- **The Footer must not be an afterthought** Ã¢â‚¬â€ it should have the logo repeated, a short brand tagline, a newsletter input row, the link columns, a divider, and the copyright bar. Full treatment.
+- **Section "label tags"** (the small uppercase text above section titles like `THE PROCESS`) should be styled as a badge Ã¢â‚¬â€ small pill with orange/10 background, orange text, slight border. Not just plain uppercase text.
+- **At least one section must use a background pattern** Ã¢â‚¬â€ CSS dot grid, line grid, or diagonal stripes at very low opacity (3Ã¢â‚¬â€œ5%) over the dark background. Adds texture without noise.
+
+---
+
+### Motion & Interaction Ã¢â‚¬â€ Purposeful, Not Gratuitous
+
+- **Never animate everything** Ã¢â‚¬â€ only animate things that benefit from it: hero illustration (float), section entries (fade up once), stat counters (count up on view), CTA hover states.
+- **Animation durations must feel natural**: fade-ups `0.5sÃ¢â‚¬â€œ0.7s`, counters `1.8sÃ¢â‚¬â€œ2.2s`, floats `3.5sÃ¢â‚¬â€œ5s`. Anything faster than `0.3s` for a section entry looks twitchy.
 - **Hover effects on cards must be subtle**: a tiny border color shift + a soft shadow increase. No wild scale jumps or color flashes. `transition-all duration-300` minimum.
-- **No infinite spinning loaders, no bouncing icons, no marquee scrolling text** unless it's the trust logo bar â€” and even that should be very slow (`40s` cycle).
-- **Stagger delays on card grids** should be `0.08sâ€“0.15s` per item. Any longer looks sluggish.
+- **No infinite spinning loaders, no bouncing icons, no marquee scrolling text** unless it's the trust logo bar Ã¢â‚¬â€ and even that should be very slow (`40s` cycle).
+- **Stagger delays on card grids** should be `0.08sÃ¢â‚¬â€œ0.15s` per item. Any longer looks sluggish.
 
 ---
 
-### Copy & Content â€” Sounds Human
+### Copy & Content Ã¢â‚¬â€ Sounds Human
 
-- **No sentence should start with "We are proud to..."**, **"Our team of experts..."**, or **"We offer a wide range of..."** â€” these are AI filler phrases. Rewrite any that appear.
-- **Use second-person ("you", "your")** in body copy and CTAs wherever possible. Not "clients benefit from" â€” write "you get".
-- **CTA buttons must not say "Learn More" or "Get Started" everywhere** â€” vary them: `See How It Works`, `Join the Network`, `Let's Build This`, `Start Earning`, `Run My Campaign`.
-- **Stat labels must be specific and punchy** â€” not "Happy Clients" but `Brands That Scaled`. Not "Projects Done" but `Affiliate Programs Launched`.
-- **Testimonial quotes must sound real and specific** â€” include a real pain point, a specific result, and a human reaction. Avoid generic praise like "Great service, highly recommend."
+- **No sentence should start with "We are proud to..."**, **"Our team of experts..."**, or **"We offer a wide range of..."** Ã¢â‚¬â€ these are AI filler phrases. Rewrite any that appear.
+- **Use second-person ("you", "your")** in body copy and CTAs wherever possible. Not "clients benefit from" Ã¢â‚¬â€ write "you get".
+- **CTA buttons must not say "Learn More" or "Get Started" everywhere** Ã¢â‚¬â€ vary them: `See How It Works`, `Join the Network`, `Let's Build This`, `Start Earning`, `Run My Campaign`.
+- **Stat labels must be specific and punchy** Ã¢â‚¬â€ not "Happy Clients" but `Brands That Scaled`. Not "Projects Done" but `Affiliate Programs Launched`.
+- **Testimonial quotes must sound real and specific** Ã¢â‚¬â€ include a real pain point, a specific result, and a human reaction. Avoid generic praise like "Great service, highly recommend."
 
 ---
 
 ### Things That Are Forbidden
 
-- âŒ No `rounded-lg` on everything â€” mix `rounded-xl`, `rounded-2xl`, `rounded-3xl`, and `rounded-full` for different element types
-- âŒ No `text-gray-500` â€” use `text-stone-400` or `text-stone-300` to stay in the warm tone palette
-- âŒ No flat white cards with a plain gray border on a white background â€” if the page is dark, cards must use the glassmorphism treatment
-- âŒ No stock icon packs or emoji in headings â€” Lucide icons only, used in modular icon blocks
-- âŒ No default browser `<select>` dropdowns â€” use shadcn `Select` component
-- âŒ No `<table>` tags for layout â€” CSS Grid and Flexbox only
-- âŒ No hardcoded inline `style={{}}` for colors â€” use Tailwind classes or CSS variables
-- âŒ No copy that reads like a list of features with no narrative â€” each section needs a one or two sentence intro that frames *why it matters before* listing what it does
-- âŒ No pages that are just the homepage hero reskinned â€” each page must have a distinct visual opener
-- âŒ No `mt-4 mb-4` spacing everywhere â€” use Tailwind's `space-y-*` on containers and `gap-*` on grids for consistent, intentional spacing
+- Ã¢ÂÅ’ No `rounded-lg` on everything Ã¢â‚¬â€ mix `rounded-xl`, `rounded-2xl`, `rounded-3xl`, and `rounded-full` for different element types
+- Ã¢ÂÅ’ No `text-gray-500` Ã¢â‚¬â€ use `text-stone-400` or `text-stone-300` to stay in the warm tone palette
+- Ã¢ÂÅ’ No flat white cards with a plain gray border on a white background Ã¢â‚¬â€ if the page is dark, cards must use the glassmorphism treatment
+- Ã¢ÂÅ’ No stock icon packs or emoji in headings Ã¢â‚¬â€ Lucide icons only, used in modular icon blocks
+- Ã¢ÂÅ’ No default browser `<select>` dropdowns Ã¢â‚¬â€ use shadcn `Select` component
+- Ã¢ÂÅ’ No `<table>` tags for layout Ã¢â‚¬â€ CSS Grid and Flexbox only
+- Ã¢ÂÅ’ No hardcoded inline `style={{}}` for colors Ã¢â‚¬â€ use Tailwind classes or CSS variables
+- Ã¢ÂÅ’ No copy that reads like a list of features with no narrative Ã¢â‚¬â€ each section needs a one or two sentence intro that frames *why it matters before* listing what it does
+- Ã¢ÂÅ’ No pages that are just the homepage hero reskinned Ã¢â‚¬â€ each page must have a distinct visual opener
+- Ã¢ÂÅ’ No `mt-4 mb-4` spacing everywhere Ã¢â‚¬â€ use Tailwind's `space-y-*` on containers and `gap-*` on grids for consistent, intentional spacing

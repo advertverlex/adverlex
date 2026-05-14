@@ -72,7 +72,7 @@ export function AudienceSplit() {
                   {card.description}
                 </p>
 
-                <div className="mb-12 w-full h-56 lg:h-72 grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700">
+                <div className="mb-12 w-full h-56 lg:h-72 transition-all duration-700">
                   <IllustrationBlock
                     src={card.illustration}
                     alt={card.title}

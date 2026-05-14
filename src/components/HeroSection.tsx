@@ -56,7 +56,7 @@ export function HeroSection() {
 
             <motion.h1
               variants={itemVariants}
-              className="font-heading font-black text-6xl md:text-8xl leading-[0.9] tracking-tighter mb-8"
+              className="font-heading font-black text-5xl md:text-8xl leading-[0.9] tracking-tighter mb-8"
             >
               Forge <span className="text-foreground/40 italic font-light">Unstoppable</span> <br />
 
@@ -123,7 +123,7 @@ export function HeroSection() {
             transition={{ duration: 1.2, ease: "easeOut" as any, delay: 0.5 }}
             className="lg:col-span-5 relative"
           >
-            <div className="relative z-10 w-full max-w-[500px] mx-auto lg:max-w-none grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-700">
+            <div className="relative z-10 w-full max-w-[500px] mx-auto lg:max-w-none transition-all duration-700">
               <IllustrationBlock
                 src="/illustrations/online-marketing.svg"
                 alt="Online Marketing Strategy"

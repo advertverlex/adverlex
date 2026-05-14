@@ -37,6 +37,7 @@ const services = [
 export function Navbar() {
   const pathname = usePathname()
   const [isScrolled, setIsScrolled] = React.useState(false)
+  const [isOpen, setIsOpen] = React.useState(false)
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -129,7 +130,7 @@ export function Navbar() {
 
           {/* Mobile Menu Trigger */}
           <div className="lg:hidden">
-            <Sheet>
+            <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger render={(props) => (
                 <Button {...props} variant="ghost" size="icon" className="rounded-xl hover:bg-white/5">
                   <Menu className="w-7 h-7 text-foreground" />
@@ -155,6 +156,7 @@ export function Navbar() {
                       <Link
                         key={service.href}
                         href={service.href}
+                        onClick={() => setIsOpen(false)}
                         className="flex items-center justify-between text-3xl font-heading font-black text-foreground hover:text-brand-primary transition-all group/mob uppercase tracking-tighter"
 
                       >
@@ -169,6 +171,7 @@ export function Navbar() {
                       <Link
                         key={link.href}
                         href={link.href}
+                        onClick={() => setIsOpen(false)}
                         className="flex items-center justify-between text-3xl font-heading font-black text-foreground hover:text-brand-primary transition-all group/mob uppercase tracking-tighter"
 
                       >
@@ -182,7 +185,7 @@ export function Navbar() {
                       asChild
                       className="rounded-xl bg-brand-primary hover:bg-brand-primary/90 text-white h-16 text-lg font-bold uppercase tracking-[0.2em] glow-primary"
                     >
-                      <Link href="/contact">Get Started</Link>
+                      <Link href="/contact" onClick={() => setIsOpen(false)}>Get Started</Link>
                     </Button>
                     <div className="flex justify-center border-t border-white/5 pt-8">
                       <ModeToggle />
