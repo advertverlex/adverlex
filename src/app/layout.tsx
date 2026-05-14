@@ -21,10 +21,10 @@ const mono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Adverlex — Digital & Affiliate Marketing Agency",
+    default: "Adverlex — The Engineers of Data-Driven Digital & Affiliate Growth",
     template: "%s | Adverlex",
   },
-  description: "Adverlex builds data-driven digital marketing and affiliate programs that turn clicks into revenue. Leading agency for SEO, PPC, and performance marketing worldwide.",
+  description: "Scale your brand with Adverlex. We build data-driven digital marketing and high-performance affiliate programs that transform clicks into sustainable revenue streams.",
   keywords: [
     "Digital Marketing", "Affiliate Marketing", "SEO Optimization", "PPC Management", "Paid Advertising", 
     "Lead Generation", "Revenue Growth", "Marketing Analytics", "Adverlex", "Affiliate Network", 
@@ -50,10 +50,10 @@ export const metadata: Metadata = {
     siteName: "Adverlex",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Adverlex — Digital & Affiliate Marketing Agency",
+        alt: "Adverlex — The Engineers of Data-Driven Digital & Affiliate Growth",
       },
     ],
     locale: "en_US",
@@ -61,9 +61,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Adverlex — Digital & Affiliate Marketing Agency",
-    description: "Data-driven marketing strategies that turn clicks into revenue.",
-    images: ["/og-image.png"],
+    title: "Adverlex — The Engineers of Data-Driven Digital & Affiliate Growth",
+    description: "Scale your brand with Adverlex. Data-driven marketing strategies that turn clicks into revenue.",
+    images: ["/og-image.jpg"],
     creator: "@adverlex",
   },
   icons: {
