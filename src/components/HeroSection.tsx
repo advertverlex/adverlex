@@ -50,7 +50,7 @@ export function HeroSection() {
           >
             <motion.div variants={itemVariants} className="mb-6">
               <Badge variant="outline" className="px-4 py-1.5 rounded-full border-brand-primary/30 bg-brand-primary/10 text-brand-primary font-bold tracking-widest text-[10px] uppercase">
-                ðŸ”¥ Affiliate & Digital Marketing Agency
+                🔥 Affiliate & Digital Marketing Agency
               </Badge>
             </motion.div>
 

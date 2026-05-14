@@ -138,8 +138,8 @@ export function Navbar() {
                 </Button>
               )} />
               <SheetContent
-                side="right"
-                className="w-full sm:w-[400px] border-l border-border/50 bg-background/95 backdrop-blur-2xl p-8 overflow-y-auto"
+                side="left"
+                className="w-full sm:w-[400px] border-r border-border/50 bg-background/95 backdrop-blur-2xl p-8 overflow-y-auto"
 
               >
                 <SheetHeader className="text-left mb-12">
