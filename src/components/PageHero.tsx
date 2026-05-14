@@ -62,7 +62,7 @@ export function PageHero({
           >
             <IllustrationBlock
               src={illustration}
-              alt={title}
+              alt={typeof title === "string" ? title : tag}
               animate={true}
               className="max-w-md mx-auto lg:max-w-none"
             />
