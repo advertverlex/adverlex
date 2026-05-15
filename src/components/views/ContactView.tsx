@@ -9,7 +9,7 @@ import Link from "next/link"
 
 export function ContactView() {
   return (
-    <main className="relative min-h-screen bg-background">
+    <main className="relative min-h-screen bg-background overflow-x-hidden">
 
       <Navbar />
       

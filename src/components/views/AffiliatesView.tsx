@@ -9,7 +9,7 @@ import { ShieldCheck, BarChart3, Rocket, DollarSign, HelpCircle } from "lucide-r
 
 export function AffiliatesView() {
   return (
-    <main className="relative min-h-screen bg-brand-dark">
+    <main className="relative min-h-screen bg-brand-dark overflow-x-hidden">
       <Navbar />
       
       <PageHero

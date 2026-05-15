@@ -8,7 +8,7 @@ import { ShieldCheck, Heart, Zap, Users } from "lucide-react"
 
 export function AboutView() {
   return (
-    <main className="relative min-h-screen bg-background">
+    <main className="relative min-h-screen bg-background overflow-x-hidden">
 
       <Navbar />
       
