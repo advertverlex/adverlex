@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer"
 import { PageHero } from "@/components/PageHero"
 import { FeatureCard } from "@/components/FeatureCard"
 import { CTABanner } from "@/components/CTABanner"
-import { BarChart3, Search, Share2, FileText, Mail, ShieldCheck, Target, Zap, TrendingUp } from "lucide-react"
+import { Search, Share2, FileText, Mail, ShieldCheck, Target, Zap, TrendingUp } from "lucide-react"
 
 const dmServices = [
   {
@@ -87,7 +87,7 @@ export function DigitalMarketingView() {
             </h2>
 
             <p className="text-stone-400 max-w-2xl text-lg md:text-xl">
-              We don't just run ads. We build sustainable growth engines that leverage data to maximize your ROI.
+              We don&apos;t just run ads. We build sustainable growth engines that leverage data to maximize your ROI.
             </p>
           </div>
 

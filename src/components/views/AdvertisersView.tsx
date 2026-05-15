@@ -97,7 +97,7 @@ export function AdvertisersView() {
           <div className="text-center mb-16 md:mb-24">
             <h2 className="font-heading font-black text-4xl md:text-5xl lg:text-7xl mb-6 tracking-tighter text-foreground uppercase leading-[0.9]">Service Packages</h2>
 
-            <p className="text-stone-400 text-lg max-w-2xl mx-auto">Tailored marketing solutions designed to meet your brand's unique growth goals.</p>
+            <p className="text-stone-400 text-lg max-w-2xl mx-auto">Tailored marketing solutions designed to meet your brand&apos;s unique growth goals.</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">

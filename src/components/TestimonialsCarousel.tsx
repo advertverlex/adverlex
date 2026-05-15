@@ -87,7 +87,7 @@ export function TestimonialsCarousel() {
               initial={{ opacity: 0, x: 30 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -30 }}
-              transition={{ duration: 0.6, ease: "easeOut" as any }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
               className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
             >
               <div className="relative">
@@ -98,7 +98,7 @@ export function TestimonialsCarousel() {
                   ))}
                 </div>
                 <p className="text-xl md:text-3xl font-heading font-black text-foreground leading-none mb-10 tracking-tighter uppercase">
-                  "{testimonials[index].quote}"
+                  &quot;{testimonials[index].quote}&quot;
                 </p>
 
                 <div className="flex items-center gap-6">

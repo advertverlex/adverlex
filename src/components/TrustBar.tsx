@@ -31,7 +31,7 @@ export function TrustBar() {
           transition={{
             duration: 50,
             repeat: Infinity,
-            ease: "linear" as any,
+            ease: "linear",
           }}
           className="flex flex-nowrap shrink-0 gap-24 items-center px-12"
         >

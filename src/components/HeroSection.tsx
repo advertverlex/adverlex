@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import { motion } from "framer-motion"
-import { ArrowRight, Flame } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { IllustrationBlock } from "@/components/IllustrationBlock"
@@ -26,7 +26,7 @@ const itemVariants = {
     y: 0,
     transition: {
       duration: 0.6,
-      ease: "easeOut" as any,
+      ease: "easeOut",
     },
   },
 }
@@ -80,7 +80,7 @@ export function HeroSection() {
                 className="h-16 px-10 rounded-xl bg-brand-primary hover:bg-brand-primary/90 text-white font-bold glow-primary text-lg transition-all hover:scale-[1.02] active:scale-95 tracking-wide"
               >
                 <Link href="/advertisers">
-                  I'm an Advertiser <ArrowRight className="ml-2 w-5 h-5" />
+                  I&apos;m an Advertiser <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
               </Button>
               <Button
@@ -89,7 +89,7 @@ export function HeroSection() {
                 size="lg"
                 className="h-16 px-10 rounded-xl border-border hover:border-brand-primary/40 hover:bg-brand-primary/5 text-foreground font-bold text-lg tracking-wide transition-all"
               >
-                <Link href="/affiliates">I'm an Affiliate</Link>
+                <Link href="/affiliates">I&apos;m an Affiliate</Link>
               </Button>
             </motion.div>
 
@@ -120,7 +120,7 @@ export function HeroSection() {
           <motion.div
             initial={{ opacity: 0, scale: 0.9, rotate: -5 }}
             animate={{ opacity: 1, scale: 1, rotate: 0 }}
-            transition={{ duration: 1.2, ease: "easeOut" as any, delay: 0.5 }}
+            transition={{ duration: 1.2, ease: "easeOut", delay: 0.5 }}
             className="lg:col-span-5 relative"
           >
             <div className="relative z-10 w-full max-w-[500px] mx-auto lg:max-w-none transition-all duration-700">

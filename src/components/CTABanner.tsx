@@ -1,7 +1,6 @@
 "use client"
 
 import * as React from "react"
-import { motion } from "framer-motion"
 import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { IllustrationBlock } from "@/components/IllustrationBlock"
@@ -25,7 +24,7 @@ export function CTABanner() {
                 Your Growth?
               </h2>
               <p className="text-white/90 text-lg md:text-xl mb-12 max-w-md leading-relaxed">
-                Let's build your custom digital marketing or affiliate program. No fluff — just results.
+                Let&apos;s build your custom digital marketing or affiliate program. No fluff — just results.
               </p>
               <Button
                 asChild

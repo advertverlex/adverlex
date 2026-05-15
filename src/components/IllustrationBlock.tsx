@@ -25,7 +25,7 @@ export function IllustrationBlock({
         transition: {
           duration: 4,
           repeat: Infinity,
-          ease: "easeInOut" as any,
+          ease: "easeInOut",
         },
       }
     : {}

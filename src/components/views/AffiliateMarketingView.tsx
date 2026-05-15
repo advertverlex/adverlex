@@ -57,7 +57,7 @@ export function AffiliateMarketingView() {
                 <h3 className="font-heading font-black text-3xl md:text-5xl mb-8 leading-[0.9] tracking-tighter text-foreground uppercase">Scale Your Sales, <br />Not Your Overhead.</h3>
 
                 <p className="text-stone-400 text-lg md:text-xl mb-12 leading-relaxed">
-                  Launching an affiliate program shouldn't be a bottleneck. We handle the technical integration, recruitment, and day-to-day operations so you can focus on your business goals.
+                  Launching an affiliate program shouldn&apos;t be a bottleneck. We handle the technical integration, recruitment, and day-to-day operations so you can focus on your business goals.
                 </p>
                 <ul className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {["Performance-based pricing", "Custom recruitment", "Proactive fraud prevention", "Real-time ROI dashboard"].map((item) => (

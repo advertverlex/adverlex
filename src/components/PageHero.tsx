@@ -38,7 +38,7 @@ export function PageHero({
           <motion.div
             initial={{ opacity: 0, x: reverse ? 40 : -40 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut" as any }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <Badge variant="outline" className="px-3 py-1 rounded-full border-brand-primary/30 bg-brand-primary/10 text-brand-primary font-black tracking-[0.3em] uppercase text-[10px] mb-8 md:mb-10 font-mono">
               {tag}
@@ -57,7 +57,7 @@ export function PageHero({
           <motion.div
             initial={{ opacity: 0, scale: 0.9, rotate: reverse ? 5 : -5 }}
             animate={{ opacity: 1, scale: 1, rotate: 0 }}
-            transition={{ duration: 1.2, ease: "easeOut" as any, delay: 0.2 }}
+            transition={{ duration: 1.2, ease: "easeOut", delay: 0.2 }}
             className="relative transition-all duration-1000"
           >
             <IllustrationBlock
