@@ -29,12 +29,12 @@ export function ContactForm() {
 
       <Button 
         asChild
-        className="w-full h-20 rounded-2xl bg-brand-primary hover:bg-brand-primary/90 text-white font-bold text-xl md:text-2xl uppercase tracking-widest transition-all hover:scale-[1.05] active:scale-95 shadow-2xl shadow-brand-primary/40 group"
+        className="w-full h-16 md:h-20 rounded-2xl bg-brand-primary hover:bg-brand-primary/90 text-white font-bold text-xs sm:text-base md:text-2xl uppercase tracking-widest transition-all hover:scale-[1.05] active:scale-95 shadow-2xl shadow-brand-primary/40 group px-4 sm:px-8"
       >
-        <a href={mailtoLink}>
-          <Mail className="w-8 h-8 mr-4 group-hover:rotate-12 transition-transform" />
-          Send Growth Inquiry
-          <ArrowRight className="w-8 h-8 ml-4 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
+        <a href={mailtoLink} className="flex items-center justify-center gap-2 sm:gap-4">
+          <Mail className="w-5 h-5 sm:w-8 sm:h-8 group-hover:rotate-12 transition-transform shrink-0" />
+          <span className="whitespace-nowrap">Send Growth Inquiry</span>
+          <ArrowRight className="w-5 h-5 sm:w-8 sm:h-8 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all shrink-0 hidden sm:block" />
         </a>
       </Button>
 
