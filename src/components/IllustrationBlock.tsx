@@ -27,7 +27,7 @@ export function IllustrationBlock({
           repeat: Infinity,
           ease: "easeInOut",
         },
-      }
+      } as any
     : {}
 
   return (
