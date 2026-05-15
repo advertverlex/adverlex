@@ -70,10 +70,10 @@ export function HeroSection() {
               variants={itemVariants}
               className="text-brand-muted text-lg md:text-xl leading-relaxed max-w-xl mb-10"
             >
-              Adverlex builds data-driven digital marketing and affiliate programs that turn clicks into customers â€” and customers into long-term revenue.
+              Adverlex builds data-driven digital marketing and affiliate programs that turn clicks into customers &mdash; and customers into long-term revenue.
             </motion.p>
 
-            <motion.div variants={itemVariants} className="flex flex-wrap gap-4">
+            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4">
               <Button
                 asChild
                 size="lg"

@@ -30,7 +30,7 @@ export default function Home() {
       <section className="py-24 bg-brand-dark/50 border-t border-brand-primary/20 border-b border-white/5 relative">
         <div className="absolute inset-0 bg-dot-grid opacity-[0.05] pointer-events-none" />
         <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
             <StatsCounter value={2} prefix="$" suffix="M+" label="Managed Affiliate Revenue" />
             <StatsCounter value={5000} suffix="+" label="Active Business Partners" />
             <StatsCounter value={98} suffix="%" label="Client Retention Rate" />

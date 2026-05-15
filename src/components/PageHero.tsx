@@ -44,7 +44,7 @@ export function PageHero({
               {tag}
             </Badge>
 
-            <h1 className="font-heading font-black text-5xl md:text-7xl lg:text-8xl leading-[0.9] tracking-tighter mb-8 md:mb-10 text-foreground uppercase">
+            <h1 className="font-heading font-black text-5xl md:text-7xl lg:text-8xl leading-[0.9] tracking-tighter mb-8 md:mb-10 text-foreground uppercase break-words">
               {title}
             </h1>
 
